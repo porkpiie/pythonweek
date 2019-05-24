@@ -1,0 +1,7 @@
+Phy = input("Enter Physics score:")
+Che = input("Enter Chemisry score:")
+Mat = input("Enter Maths score:")
+total= int(Phy)+int(Che)+int(Mat)
+per=(total/450*100)
+print("Total score is:",total)
+print("Percentage is:",per)
