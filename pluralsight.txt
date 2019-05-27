@@ -1,0 +1,908 @@
+
+>>> 2 + 2
+4
+>>> 3 * x
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'x' is not defined
+>>> x = 5
+>>> x
+5
+>>> 3 * x
+15
+>>> _
+15
+>>> _ x 2
+  File "<stdin>", line 1
+    _ x 2
+      ^
+SyntaxError: invalid syntax
+>>> _ * 2
+30
+>>> print('Hello, Python')
+Hello, Python
+>>> ^Z
+
+PS C:\Users\Adam> python3
+python3 : The term 'python3' is not recognized as the name of a cmdlet, function, script file, or operable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ python3
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (python3:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Adam> python
+Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 21:26:53) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> for i in range(5):
+...     x = i * 10
+...     pritn(x)
+...     print(x)
+...
+Traceback (most recent call last):
+  File "<stdin>", line 3, in <module>
+NameError: name 'pritn' is not defined
+>>>  for in in range(5):
+  File "<stdin>", line 1
+    for in in range(5):
+    ^
+IndentationError: unexpected indent
+>>> ^Z
+
+PS C:\Users\Adam> python
+Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 21:26:53) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> for i in range(5):
+... print(x)
+  File "<stdin>", line 2
+    print(x)
+        ^
+IndentationError: expected an indented block
+>>> for i in range(5)
+  File "<stdin>", line 1
+    for i in range(5)
+                    ^
+SyntaxError: invalid syntax
+>>> ^Z
+
+PS C:\Users\Adam> python
+Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 21:26:53) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> for i in range(5):
+...     x = i * 10
+...     print(x)
+...
+0
+10
+20
+30
+40
+>>> import math
+>>> math.sqrt(81)
+9.0
+>>> help(math)
+Help on built-in module math:
+
+NAME
+    math
+
+DESCRIPTION
+    This module is always available.  It provides access to the
+    mathematical functions defined by the C standard.
+
+FUNCTIONS
+    acos(x, /)
+        Return the arc cosine (measured in radians) of x.
+
+    acosh(x, /)
+        Return the inverse hyperbolic cosine of x.
+
+    asin(x, /)
+        Return the arc sine (measured in radians) of x.
+
+    asinh(x, /)
+        Return the inverse hyperbolic sine of x.
+
+    atan(x, /)
+        Return the arc tangent (measured in radians) of x.
+
+    atan2(y, x, /)
+        Return the arc tangent (measured in radians) of y/x.
+
+        Unlike atan(y/x), the signs of both x and y are considered.
+
+    atanh(x, /)
+        Return the inverse hyperbolic tangent of x.
+
+    ceil(x, /)
+        Return the ceiling of x as an Integral.
+
+        This is the smallest integer >= x.
+
+    copysign(x, y, /)
+        Return a float with the magnitude (absolute value) of x but the sign of y.
+
+        On platforms that support signed zeros, copysign(1.0, -0.0)
+        returns -1.0.
+
+    cos(x, /)
+        Return the cosine of x (measured in radians).
+
+    cosh(x, /)
+        Return the hyperbolic cosine of x.
+
+    degrees(x, /)
+        Convert angle x from radians to degrees.
+
+    erf(x, /)
+        Error function at x.
+
+    erfc(x, /)
+        Complementary error function at x.
+
+    exp(x, /)
+        Return e raised to the power of x.
+
+    expm1(x, /)
+        Return exp(x)-1.
+
+        This function avoids the loss of precision involved in the direct evaluation of exp(x)-1 for small x.
+
+    fabs(x, /)
+        Return the absolute value of the float x.
+
+    factorial(x, /)
+        Find x!.
+
+        Raise a ValueError if x is negative or non-integral.
+
+    floor(x, /)
+        Return the floor of x as an Integral.
+
+        This is the largest integer <= x.
+
+    fmod(x, y, /)
+        Return fmod(x, y), according to platform C.
+
+        x % y may differ.
+
+
+>>> help(math.factorial)
+Help on built-in function factorial in module math:
+
+factorial(x, /)
+    Find x!.
+
+    Raise a ValueError if x is negative or non-integral.
+
+>>> math.factorial(5)
+120
+>>> math.factorial(6)
+720
+>>> n = 5
+>>> k = 3
+>>> math.factorial(n) / (math.factorial(k) * math.factorial(n - k))
+10.0
+>>> from math import factorial
+>>> factorial(n) / (factorial(k) * factorial(n - k))
+10.0
+>>> from math import factorial as fac
+>>> fac(n) / (fac(k) * fac(n - k))
+10.0
+>>> fac(n) // (fac(k) * fac(n - k))
+10
+>>> 2**31 - 1
+2147483647
+>>> fac(13)
+6227020800
+>>> n = 100
+>>> k = 2
+>>> fac(n) // (fac(k) * fac(n - k))
+4950
+>>> fac(n)
+93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000
+>>> len(str(fac(n)))
+158
+>>> ^Q
+  File "<stdin>", line 1
+    
+    ^
+SyntaxError: invalid syntax
+>>> python
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'python' is not defined
+>>> 0o10
+8
+>>> 0x10
+16
+>>> int(3.5)#
+3
+>>> int(-3.5)
+-3
+>>> int("496")
+496
+>>> int("10000", 3)
+81
+>>> 3e8
+300000000.0
+>>> 1.616e-35
+1.616e-35
+>>> float(7)
+7.0
+>>> flat("1.618")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'flat' is not defined
+>>> float("nan")
+nan
+>>> 3.0 + 1
+4.0
+>>> a = None
+>>> a is None
+True
+>>> bool(0)
+False
+>>> bool(42)
+True
+>>> bool(-1)
+True
+>>> bool(0.0)
+False
+>>> bool(0.298)
+True
+>>> bool([])
+False
+>>> bool("Spam")
+True
+>>> g = 20
+>>> g == 20
+True
+>>> g == 13
+False
+>>> g != 20
+False
+>>> g != 13
+True
+>>> g < 30
+True
+>>> g > 30
+False
+>>> g <= 20
+True
+>>> g >= 20
+True
+>>> if True:
+...     print("It's true!")
+...
+It's true!
+>>> if False:
+...     print("It's true!")
+...
+>>> if bool("eggs"):
+...     print("Yes please!")
+...
+Yes please!
+>>> if "eggs":
+...     print("Yes Please!")
+...
+Yes Please!
+>>> h = 42
+>>> if h > 50:
+...     print("Greater than 50")
+... else:
+...     print("50 or smaller")
+...
+50 or smaller
+>>> if h > 50:
+...     print("Greater than 50")
+... elif h < 20:
+...     print ("Less than 20")
+... else:
+...     print("Between 20 and 50")
+...
+Between 20 and 50
+>>> c = 5
+>>> while c != 0:
+...     print(c)
+...     c -= 1
+...
+5
+4
+3
+2
+1
+>>> c = 5
+>>> while c:
+...     print(c)
+...     c -= 1
+...
+5
+4
+3
+2
+1
+>>> while True:
+...     print("looping!")
+...
+looping!
+looping!
+looping!
+looping!
+looping!
+looping!
+looping!
+looping!
+looping!
+looping!
+looping!
+looping!
+looping!
+
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+KeyboardInterrupt
+>>> while True:
+...     response = input()
+...     if int(response) % 7 == 0:
+  File "<stdin>", line 3
+    if int(response) % 7 == 0:
+                             ^
+IndentationError: unindent does not match any outer indentation level
+>>> while True:
+...     response = input()
+...     if int(response) % 7 == 0:
+...         break
+...
+12
+67
+34
+28
+>>> "This is a \" in a string."
+'This is a " in a string.'
+>>> k = 'A \\ in a string.'
+>>>
+>>> k
+'A \\ in a string.'
+>>> print(k)
+A \ in a string.
+>>> str(496)
+'496'
+>>> s = 'parrot'
+>>> s[4]
+'o'
+>>> type (s[4])
+<class 'str'>
+>>> help(string)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'string' is not defined
+>>> help(str)
+Help on class str in module builtins:
+
+class str(object)
+ |  str(object='') -> str
+ |  str(bytes_or_buffer[, encoding[, errors]]) -> str
+ |
+ |  Create a new string object from the given object. If encoding or
+ |  errors is specified, then the object must expose a data buffer
+ |  that will be decoded using the given encoding and error handler.
+ |  Otherwise, returns the result of object.__str__() (if defined)
+ |  or repr(object).
+ |  encoding defaults to sys.getdefaultencoding().
+ |  errors defaults to 'strict'.
+ |
+ |  Methods defined here:
+ |
+ |  __add__(self, value, /)
+ |      Return self+value.
+ |
+ |  __contains__(self, key, /)
+ |      Return key in self.
+ |
+ |  __eq__(self, value, /)
+ |      Return self==value.
+ |
+ |  __format__(self, format_spec, /)
+ |      Return a formatted version of the string as described by format_spec.
+ |
+ |  __ge__(self, value, /)
+ |      Return self>=value.
+ |
+ |  __getattribute__(self, name, /)
+ |      Return getattr(self, name).
+ |
+ |  __getitem__(self, key, /)
+ |      Return self[key].
+ |
+ |  __getnewargs__(...)
+ |
+ |  __gt__(self, value, /)
+ |      Return self>value.
+ |
+ |  __hash__(self, /)
+ |      Return hash(self).
+ |
+ |  __iter__(self, /)
+ |      Implement iter(self).
+ |
+ |  __le__(self, value, /)
+ |      Return self<=value.
+ |
+ |  __len__(self, /)
+ |      Return len(self).
+ |
+ |  __lt__(self, value, /)
+ |      Return self<value.
+ |
+ |  __mod__(self, value, /)
+ |      Return self%value.
+ |
+ |  __mul__(self, value, /)
+ |      Return self*value.
+ |
+ |  __ne__(self, value, /)
+ |      Return self!=value.
+ |
+ |  __repr__(self, /)
+ |      Return repr(self).
+ |
+ |  __rmod__(self, value, /)
+ |      Return value%self.
+ |
+ |  __rmul__(self, value, /)
+ |      Return value*self.
+ |
+ |  __sizeof__(self, /)
+ |      Return the size of the string in memory, in bytes.
+ |
+ |  __str__(self, /)
+ |      Return str(self).
+ |
+ |  capitalize(self, /)
+ |      Return a capitalized version of the string.
+ |
+ |      More specifically, make the first character have upper case and the rest lower
+ |      case.
+ |
+ |  casefold(self, /)
+ |      Return a version of the string suitable for caseless comparisons.
+ |
+ |  center(self, width, fillchar=' ', /)
+ |      Return a centered string of length width.
+ |
+ |      Padding is done using the specified fill character (default is a space).
+ |
+ |  count(...)
+ |      S.count(sub[, start[, end]]) -> int
+ |
+ |      Return the number of non-overlapping occurrences of substring sub in
+ |      string S[start:end].  Optional arguments start and end are
+ |      interpreted as in slice notation.
+ |
+ |  encode(self, /, encoding='utf-8', errors='strict')
+ |      Encode the string using the codec registered for encoding.
+ |
+ |      encoding
+ |        The encoding in which to encode the string.
+ |      errors
+ |        The error handling scheme to use for encoding errors.
+ |        The default is 'strict' meaning that encoding errors raise a
+ |        UnicodeEncodeError.  Other possible values are 'ignore', 'replace' and
+ |        'xmlcharrefreplace' as well as any other name registered with
+ |        codecs.register_error that can handle UnicodeEncodeErrors.
+ |
+ |  endswith(...)
+ |      S.endswith(suffix[, start[, end]]) -> bool
+ |
+ |      Return True if S ends with the specified suffix, False otherwise.
+ |      With optional start, test S beginning at that position.
+ |      With optional end, stop comparing S at that position.
+ |      suffix can also be a tuple of strings to try.
+ |
+ |  expandtabs(self, /, tabsize=8)
+ |      Return a copy where all tab characters are expanded using spaces.
+ |
+ |      If tabsize is not given, a tab size of 8 characters is assumed.
+ |
+ |  find(...)
+ |      S.find(sub[, start[, end]]) -> int
+ |
+ |      Return the lowest index in S where substring sub is found,
+
+>>> c = 'london'
+>>> c.capitalize()
+'London'
+>>> c
+'london'
+>>> d = b'some bytes'
+>>> d.split()
+[b'some', b'bytes']
+>>> norsk = ^Q
+  File "<stdin>", line 1
+    norsk = 
+            ^
+SyntaxError: invalid syntax
+>>> [1, 9, 8]
+[1, 9, 8]
+>>> a = ["apple", "orange", "pear"]
+>>> a[1]
+'orange'
+>>> a[1] = 7
+>>> a
+['apple', 7, 'pear']
+>>> b = []
+>>> b.append(1.618)
+>>> b
+[1.618]
+>>> b.append(1.414)
+>>> b
+[1.618, 1.414]
+>>> list("characters")
+['c', 'h', 'a', 'r', 'a', 'c', 't', 'e', 'r', 's']
+>>> c = ['bear',
+...      'giraffe',
+...      'elephant',
+...      'caterpillar',]
+>>> c
+['bear', 'giraffe', 'elephant', 'caterpillar']
+>>> d {'adam': '07777111222', 'beta': '07777333444'}
+  File "<stdin>", line 1
+    d {'adam': '07777111222', 'beta': '07777333444'}
+      ^
+SyntaxError: invalid syntax
+>>> d = {'adam': '07777111222', 'beta': '07777333444'}
+>>> d['adam']
+'07777111222'
+>>> d['adam'] = '07777999888'
+>>> d
+{'adam': '07777999888', 'beta': '07777333444'}
+>>> cities = ["London", "New York", "Paris", "Oslo", "Helsinki"]
+>>> for city in cites:
+...     print(city)
+...
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'cites' is not defined
+>>> for city in cities:
+...     print(city)
+...
+London
+New York
+Paris
+Oslo
+Helsinki
+>>> ^Z
+
+PS C:\Users\Adam> python
+Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 21:26:53) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from urllib.request import urlopen
+>>> with urlopen('http://sixty-north.com/c/t.txt') as story:
+...     story_words = []
+...     for line in story:
+...         line_words = line.split()
+...         for word in line_words:
+...             story_words.append(word)
+...
+>>> story_words
+[b'It', b'was', b'the', b'best', b'of', b'times', b'it', b'was', b'the', b'worst', b'of', b'times', b'it', b'was', b'the', b'age', b'of', b'wisdom', b'it', b'was', b'the', b'age', b'of', b'foolishness', b'it', b'was', b'the', b'epoch', b'of', b'belief', b'it', b'was', b'the', b'epoch', b'of', b'incredulity', b'it', b'was', b'the', b'season', b'of', b'Light', b'it', b'was', b'the', b'season', b'of', b'Darkness', b'it', b'was', b'the', b'spring', b'of', b'hope', b'it', b'was', b'the', b'winter', b'of', b'despair', b'we', b'had', b'everything', b'before', b'us', b'we', b'had', b'nothing', b'before', b'us', b'we', b'were', b'all', b'going', b'direct', b'to', b'Heaven', b'we', b'were', b'all', b'going', b'direct', b'the', b'other', b'way', b'in', b'short', b'the', b'period', b'was', b'so', b'far', b'like', b'the', b'present', b'period', b'that', b'some', b'of', b'its', b'noisiest', b'authorities', b'insisted', b'on', b'its', b'being', b'received', b'for', b'good', b'or', b'for', b'evil', b'in', b'the', b'superlative', b'degree', b'of', b'comparison', b'only']
+>>>         line_words = line.decode('utf-8').split()
+  File "<stdin>", line 1
+    line_words = line.decode('utf-8').split()
+    ^
+IndentationError: unexpected indent
+>>> >>> from urllib.request import urlopen
+  File "<stdin>", line 1
+    >>> from urllib.request import urlopen
+     ^
+SyntaxError: invalid syntax
+>>> >>> with urlopen('http://sixty-north.com/c/t.txt') as story:
+  File "<stdin>", line 1
+    >>> with urlopen('http://sixty-north.com/c/t.txt') as story:
+     ^
+SyntaxError: invalid syntax
+>>> ...     story_words = []
+  File "<stdin>", line 1
+    ...     story_words = []
+                      ^
+SyntaxError: invalid syntax
+>>> ...     for line in story:
+  File "<stdin>", line 1
+    ...     for line in story:
+              ^
+SyntaxError: invalid syntax
+>>> ...         line_words = line.split()
+  File "<stdin>", line 1
+    ...         line_words = line.split()
+                         ^
+SyntaxError: invalid syntax
+>>> ...         for word in line_words:
+  File "<stdin>", line 1
+    ...         for word in line_words:
+                  ^
+SyntaxError: invalid syntax
+>>> ...             story_words.append(word)^Z
+  File "<stdin>", line 1
+    ...             story_words.append(word)
+                              ^
+SyntaxError: invalid syntax
+>>> ^Z
+
+PS C:\Users\Adam> python
+Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 21:26:53) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> with urlopen('http://sixty-north.com/c/t.txt') as story:
+...     story_words = []
+...     for line in story:
+...         line_words = line.decode('utf-8').split()
+...         for word in line_words:
+...             story_words.append(word)
+...
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'urlopen' is not defined
+>>> from urllib.request import urlopen
+>>> with urlopen('http://sixty-north.com/c/t.txt') as story:
+...     story_words = []
+...     for line in story:
+...         line_words = line.decode('utf-8').split()
+...         for word in line_words:
+...             story_words.append(word)
+...
+>>> story_words
+['It', 'was', 'the', 'best', 'of', 'times', 'it', 'was', 'the', 'worst', 'of', 'times', 'it', 'was', 'the', 'age', 'of', 'wisdom', 'it', 'was', 'the', 'age', 'of', 'foolishness', 'it', 'was', 'the', 'epoch', 'of', 'belief', 'it', 'was', 'the', 'epoch', 'of', 'incredulity', 'it', 'was', 'the', 'season', 'of', 'Light', 'it', 'was', 'the', 'season', 'of', 'Darkness', 'it', 'was', 'the', 'spring', 'of', 'hope', 'it', 'was', 'the', 'winter', 'of', 'despair', 'we', 'had', 'everything', 'before', 'us', 'we', 'had', 'nothing', 'before', 'us', 'we', 'were', 'all', 'going', 'direct', 'to', 'Heaven', 'we', 'were', 'all', 'going', 'direct', 'the', 'other', 'way', 'in', 'short', 'the', 'period', 'was', 'so', 'far', 'like', 'the', 'present', 'period', 'that', 'some', 'of', 'its', 'noisiest', 'authorities', 'insisted', 'on', 'its', 'being', 'received', 'for', 'good', 'or', 'for', 'evil', 'in', 'the', 'superlative', 'degree', 'of', 'comparison', 'only']
+>>> >>> with urlopen('http://sixty-north.com/c/t.txt') as story:
+  File "<stdin>", line 1
+    >>> with urlopen('http://sixty-north.com/c/t.txt') as story:
+     ^
+SyntaxError: invalid syntax
+>>>      ^
+  File "<stdin>", line 1
+    ^
+    ^
+IndentationError: unexpected indent
+>>> SyntaxError: invalid syntax
+  File "<stdin>", line 1
+    SyntaxError: invalid syntax
+                              ^
+SyntaxError: invalid syntax
+>>> >>> ...     story_words = []
+  File "<stdin>", line 1
+    >>> ...     story_words = []
+     ^
+SyntaxError: invalid syntax
+>>>   File "<stdin>", line 1
+  File "<stdin>", line 1
+    File "<stdin>", line 1
+    ^
+IndentationError: unexpected indent
+>>>     ...     story_words = []
+  File "<stdin>", line 1
+    ...     story_words = []
+    ^
+IndentationError: unexpected indent
+>>>                       ^
+  File "<stdin>", line 1
+    ^
+    ^
+IndentationError: unexpected indent
+>>> SyntaxError: invalid syntax
+  File "<stdin>", line 1
+    SyntaxError: invalid syntax
+                              ^
+SyntaxError: invalid syntax
+>>> >>> ...     for line in story:
+  File "<stdin>", line 1
+    >>> ...     for line in story:
+     ^
+SyntaxError: invalid syntax
+>>>   File "<stdin>", line 1
+  File "<stdin>", line 1
+    File "<stdin>", line 1
+    ^
+IndentationError: unexpected indent
+>>>     ...     for line in story:
+  File "<stdin>", line 1
+    ...     for line in story:
+    ^
+IndentationError: unexpected indent
+>>>               ^
+  File "<stdin>", line 1
+    ^
+    ^
+IndentationError: unexpected indent
+>>> SyntaxError: invalid syntax
+  File "<stdin>", line 1
+    SyntaxError: invalid syntax
+                              ^
+SyntaxError: invalid syntax
+>>> >>> ...         line_words = line.split()
+  File "<stdin>", line 1
+    >>> ...         line_words = line.split()
+     ^
+SyntaxError: invalid syntax
+>>>   File "<stdin>", line 1
+  File "<stdin>", line 1
+    File "<stdin>", line 1
+    ^
+IndentationError: unexpected indent
+>>>     ...         line_words = line.split()
+  File "<stdin>", line 1
+    ...         line_words = line.split()
+    ^
+IndentationError: unexpected indent
+>>>                          ^
+  File "<stdin>", line 1
+    ^
+    ^
+IndentationError: unexpected indent
+>>> SyntaxError: invalid syntax
+  File "<stdin>", line 1
+    SyntaxError: invalid syntax
+                              ^
+SyntaxError: invalid syntax
+>>> >>> ...         for word in line_words:
+  File "<stdin>", line 1
+    >>> ...         for word in line_words:
+     ^
+SyntaxError: invalid syntax
+>>>   File "<stdin>", line 1
+  File "<stdin>", line 1
+    File "<stdin>", line 1
+    ^
+IndentationError: unexpected indent
+>>>     ...         for word in line_words:
+  File "<stdin>", line 1
+    ...         for word in line_words:
+    ^
+IndentationError: unexpected indent
+>>>                   ^
+  File "<stdin>", line 1
+    ^
+    ^
+IndentationError: unexpected indent
+>>> SyntaxError: invalid syntax
+  File "<stdin>", line 1
+    SyntaxError: invalid syntax
+                              ^
+SyntaxError: invalid syntax
+>>> >>> ...             story_words.append(word)^Z
+  File "<stdin>", line 1
+    >>> ...             story_words.append(word)^Z
+     ^
+SyntaxError: invalid syntax
+>>>   File "<stdin>", line 1
+  File "<stdin>", line 1
+    File "<stdin>", line 1
+    ^
+IndentationError: unexpected indent
+>>>     ...             story_words.append(word)^Z
+  File "<stdin>", line 1
+    ...             story_words.append(word)
+    ^
+IndentationError: unexpected indent
+>>>                               ^
+  File "<stdin>", line 1
+    ^
+    ^
+IndentationError: unexpected indent
+>>> SyntaxError: invalid syntax
+  File "<stdin>", line 1
+    SyntaxError: invalid syntax
+                              ^
+SyntaxError: invalid syntax
+>>> >>> ^Z
+  File "<stdin>", line 1
+    >>> ^Z
+     ^
+SyntaxError: invalid syntax
+>>>
+>>> PS C:\Users\Adam> python
+  File "<stdin>", line 1
+    PS C:\Users\Adam> python
+       ^
+SyntaxError: invalid syntax
+>>> Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 21:26:53) [MSC v.1916 32 bit (Intel)] on win32
+  File "<stdin>", line 1
+    Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 21:26:53) [MSC v.1916 32 bit (Intel)] on win32
+             ^
+SyntaxError: invalid syntax
+>>> Type "help", "copyright", "credits" or "license" for more information.
+  File "<stdin>", line 1
+    Type "help", "copyright", "credits" or "license" for more information.
+              ^
+SyntaxError: invalid syntax
+>>> >>> with urlopen('http://sixty-north.com/c/t.txt') as story:
+  File "<stdin>", line 1
+    >>> with urlopen('http://sixty-north.com/c/t.txt') as story:
+     ^
+SyntaxError: invalid syntax
+>>> ...     story_words = []
+  File "<stdin>", line 1
+    ...     story_words = []
+                      ^
+SyntaxError: invalid syntax
+>>> ...     for line in story:
+  File "<stdin>", line 1
+    ...     for line in story:
+              ^
+SyntaxError: invalid syntax
+>>> ...         line_words = line.decode('utf-8').split()
+  File "<stdin>", line 1
+    ...         line_words = line.decode('utf-8').split()
+                         ^
+SyntaxError: invalid syntax
+>>> ...         for word in line_words:
+  File "<stdin>", line 1
+    ...         for word in line_words:
+                  ^
+SyntaxError: invalid syntax
+>>> ...             story_words.append(word)
+  File "<stdin>", line 1
+    ...             story_words.append(word)
+                              ^
+SyntaxError: invalid syntax
+>>> ...
+Ellipsis
+>>> Traceback (most recent call last):
+  File "<stdin>", line 1
+    Traceback (most recent call last):
+                         ^
+SyntaxError: invalid syntax
+>>>   File "<stdin>", line 1, in <module>
+  File "<stdin>", line 1
+    File "<stdin>", line 1, in <module>
+    ^
+IndentationError: unexpected indent
+>>> NameError: name 'urlopen' is not defined
+  File "<stdin>", line 1
+    NameError: name 'urlopen' is not defined
+                            ^
+SyntaxError: invalid syntax
+>>> >>> from urllib.request import urlopen
+  File "<stdin>", line 1
+    >>> from urllib.request import urlopen
+     ^
+SyntaxError: invalid syntax
+>>> >>> with urlopen('http://sixty-north.com/c/t.txt') as story:
+  File "<stdin>", line 1
+    >>> with urlopen('http://sixty-north.com/c/t.txt') as story:
+     ^
+SyntaxError: invalid syntax
+>>> ...     story_words = []
+  File "<stdin>", line 1
+    ...     story_words = []
+                      ^
+SyntaxError: invalid syntax
+>>> ...     for line in story:
+  File "<stdin>", line 1
+    ...     for line in story:
+              ^
+SyntaxError: invalid syntax
+>>> ...         line_words = line.decode('utf-8').split()
+  File "<stdin>", line 1
+    ...         line_words = line.decode('utf-8').split()
+                         ^
+SyntaxError: invalid syntax
+>>> ...         for word in line_words:
+  File "<stdin>", line 1
+    ...         for word in line_words:
+                  ^
+SyntaxError: invalid syntax
+>>> ...             story_words.append(word)
+  File "<stdin>", line 1
+    ...             story_words.append(word)
+                              ^
+SyntaxError: invalid syntax
+>>> ...
+Ellipsis
+>>> >>> story_words
+  File "<stdin>", line 1
+    >>> story_words
+     ^
+SyntaxError: invalid syntax
+>>> ['It', 'was', 'the', 'best', 'of', 'times', 'it', 'was', 'the', 'worst', 'of', 'times', 'it', 'was', 'the', 'age', 'of', 'wisdom', 'it', 'was', 'the', 'age', 'of', 'foolishness', 'it', 'was', 'the', 'epoch', 'of', 'belief', 'it', 'was', 'the', 'epoch', 'of', 'incredulity', 'it', 'was', 'the', 'season', 'of', 'Light', 'it', 'was', 'the', 'season', 'of', 'Darkness', 'it', 'was', 'the', 'spring', 'of', 'hope', 'it', 'was', 'the', 'winter', 'of', 'despair', 'we', 'had', 'everything', 'before', 'us', 'we', 'had', 'nothing', 'before', 'us', 'we', 'were', 'all', 'going', 'direct', 'to', 'Heaven', 'we', 'were', 'all', 'going', 'direct', 'the', 'other', 'way', 'in', 'short', 'the', 'period', 'was', 'so', 'far', 'like', 'the', 'present', 'period', 'that', 'some', 'of', 'its', 'noisiest', 'authorities', 'insisted', 'on', 'its', 'being', 'received', 'for', 'good', 'or', 'for', 'evil', 'in', 'the', 'superlative', 'degree', 'of', 'comparison', 'only']
+['It', 'was', 'the', 'best', 'of', 'times', 'it', 'was', 'the', 'worst', 'of', 'times', 'it', 'was', 'the', 'age', 'of', 'wisdom', 'it', 'was', 'the', 'age', 'of', 'foolishness', 'it', 'was', 'the', 'epoch', 'of', 'belief', 'it', 'was', 'the', 'epoch', 'of', 'incredulity', 'it', 'was', 'the', 'season', 'of', 'Light', 'it', 'was', 'the', 'season', 'of', 'Darkness', 'it', 'was', 'the', 'spring', 'of', 'hope', 'it', 'was', 'the', 'winter', 'of', 'despair', 'we', 'had', 'everything', 'before', 'us', 'we', 'had', 'nothing', 'before', 'us', 'we', 'were', 'all', 'going', 'direct', 'to', 'Heaven', 'we', 'were', 'all', 'going', 'direct', 'the', 'other', 'way', 'in', 'short', 'the', 'period', 'was', 'so', 'far', 'like', 'the', 'present', 'period', 'that', 'some', 'of', 'its', 'noisiest', 'authorities', 'insisted', 'on', 'its', 'being', 'received', 'for', 'good', 'or', 'for', 'evil', 'in', 'the', 'superlative', 'degree', 'of', 'comparison', 'only']
+>>> >>>
