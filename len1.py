@@ -1,7 +1,8 @@
-msg=input ("Enter any message")
+msg=input("Enter any message ")
 
-i=0
+i=len(msg) - 1
 
-while i<len(msg):
+
+while i>= 0:
     print(msg[i])
-    i=i+1
+    i=i-1
