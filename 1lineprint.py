@@ -1,0 +1,5 @@
+print("But", end=" ")
+print("tonight", end=" ")
+print("it's", end=" ")
+print("heavy", end=" ")
+print("snow", end=" ")
